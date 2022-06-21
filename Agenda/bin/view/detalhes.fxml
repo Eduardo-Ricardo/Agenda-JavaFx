@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DetalhesController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox layoutY="70.0" prefHeight="330.0" prefWidth="640.0">
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="124.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="190.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="130.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="190.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Telefone Comercial: " GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label text="RG: " GridPane.rowIndex="1" />
+                        <Label text="Data de Nascimento: " GridPane.rowIndex="2" />
+                        <Label text="Telefone Pessoal:" GridPane.columnIndex="2" />
+                        <Label text="Telefone Residencial:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label text="E-mail Secundario: " GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="nomeTextField" GridPane.columnIndex="1" />
+                        <Label text="Nome: " />
+                        <TextField fx:id="rgTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="dataNascimentoTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="email1TextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="telefonePessoalTextField" GridPane.columnIndex="3" />
+                        <TextField fx:id="telefoneResidencialTextField" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField fx:id="telefoneComercialTextField" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="email2TextField" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label text="E-mail Primario: " GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="180.0" prefWidth="543.0">
+                    <columnConstraints>
+                      <ColumnConstraints maxWidth="75.0" minWidth="55.0" prefWidth="73.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="87.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="378.0" minWidth="10.0" prefWidth="281.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="183.0" minWidth="10.0" prefWidth="57.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="149.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Rua: " GridPane.columnIndex="1" />
+                        <Label GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Bairro: " GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Numero: " GridPane.columnIndex="3" />
+                        <Label prefHeight="17.0" prefWidth="32.0" text="CEP: " GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label text="Cidade: " GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <TextField fx:id="ruaResidencialTextField" GridPane.columnIndex="2" />
+                        <TextField fx:id="complementoResidencialTextField" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="bairroResidencialTextField" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="numeroResidencialTextField" GridPane.columnIndex="4" />
+                        <TextField fx:id="cepResidencialTextField" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="cidadeResidencialTextField" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <TextField fx:id="ruaComercialTextField" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="complementoComercialTextField" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <TextField fx:id="bairroComercialTextField" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="numeroComercialTextField" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <TextField fx:id="cepComercialTextField" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <TextField fx:id="cidadeComercialTextField" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                        <Label prefHeight="17.0" prefWidth="88.0" text="Complemento: " GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Rua: " GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label prefHeight="17.0" prefWidth="84.0" text="Complemento: " GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Bairro: " GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="Numero: " GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label text="CEP: " GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Label text="Cidade: " GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Label text="Endereço " />
+                        <Label text="Endereço " GridPane.rowIndex="3" />
+                        <Label text="Residencial:" GridPane.rowIndex="1" />
+                        <Label text="Comercial: " GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <HBox prefHeight="71.0" prefWidth="640.0">
+               <children>
+                  <Button fx:id="voltarButton" mnemonicParsing="false" onAction="#voltarTelaInicial" text="Voltar" />
+                  <Button fx:id="editarButton" mnemonicParsing="false" onAction="#editarContatos" text="Editar" />
+                  <Button fx:id="salvarButton" mnemonicParsing="false" onAction="#salvarContatos" text="Salvar Alterações" />
+               </children>
+            </HBox>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
